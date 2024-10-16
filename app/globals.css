@@ -1,27 +1,33 @@
+/* styles/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9; /* You can customize this */
+  color: #333; /* You can customize this */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #2563eb;
+}
+
+input, button {
+  outline: none;
+  font-family: inherit;
 }
